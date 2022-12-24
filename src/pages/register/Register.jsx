@@ -44,7 +44,6 @@ const Register = () => {
 					}
 				);
 				if (res.status === 200) {
-					setCurrentUser(res.data);
 					localStorage.setItem("user", JSON.stringify(res.data));
 					window.location.replace("/");
 				}
